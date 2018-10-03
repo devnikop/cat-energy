@@ -38,15 +38,15 @@
         <legend class="visually-hidden">Основные данные</legend>
         <p>
           <label class="form__label" for="id-name">Имя:*</label>
-          <input id="id-name" type="text" placeholder="Барсик" required>
+          <input id="id-name" type="text" name="name" placeholder="Барсик" required>
         </p>
         <p>
           <label class="form__label" for="id-weight">Вес (кг):*</label>
-          <input id="id-weight" type="text" placeholder="7" required>
+          <input id="id-weight" type="text" name="weight" placeholder="7" required>
         </p>
         <p>
           <label class="form__label" for="id-age">Возраст (лет):</label>
-          <input id="id-age" type="text" placeholder="7">
+          <input id="id-age" type="text" name="age" placeholder="7">
         </p>
       </fieldset>
       <fieldset class="form__group">
@@ -64,11 +64,11 @@
         <legend class="form__title">Контактные данные (владельца кота)</legend>
         <p>
           <label class="form__label" for="id-email">E-mail:*</label>
-          <input id="id-email" type="email" placeholder="kuklachev@gmail.com" required>
+          <input id="id-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         </p>
         <p>
           <label class="form__label" for="id-tel">Телефон:*</label>
-          <input id="id-tel" type="tel" placeholder="8 (960) 900-60-90" required>
+          <input id="id-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
         </p>
       </fieldset>
       <p>
@@ -97,7 +97,7 @@
       <button class="button" type="submit">Отправить заявку</button>
       <p class="form__text">* — Обязательные поля</p>
     </form>
-    
+
   </main>
 
   <footer class="page-footer">
@@ -109,7 +109,6 @@
       width="1345" height="645" allowfullscreen>
     </iframe>
     <a class="logo" href="index.html">
-      <img class="logo__image" src="#" width="128" height="24" alt="Логотип сайта">
       <span><strong>Cat</strong> Energy</span>
     </a>
     <ul class="social">
