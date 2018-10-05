@@ -1,4 +1,6 @@
 .product {
+  @include mobile-centering;
+
   border-top: 1px solid #ededed;
 }
 
@@ -14,18 +16,6 @@
 
 .product__features {
   font-size: 12px;
-  font-family: "Arial", sans-serif;
-  color: $second-color;
-}
-
-.catalog__text--big {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.catalog__text--small {
-  font-size: 12px;
-  line-height: 16px;
   font-family: "Arial", sans-serif;
   color: $second-color;
 }

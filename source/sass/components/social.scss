@@ -1,3 +1,6 @@
 .social {
+  border-top: 1px solid #f8f5ef;
+  border-bottom: 1px solid #f8f5ef;
+
   @include list-reset();
 }

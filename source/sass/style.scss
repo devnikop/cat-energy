@@ -1,38 +1,32 @@
 @charset 'UTF-8';
 
 // 1. Configurations and helpers
-@import
-  'abstracts/variables',
-  'abstracts/mixins';
+@import 'base/normalize';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 
-// 2. Vendors
-@import
-  'base/normalize';
+// 2. Base stuff
+@import 'base/fonts';
+@import 'base/base';
 
 
-// 3. Base stuff
-@import
-  'base/fonts',
-  'base/base';
-
-
-// 4. Components
-@import
-  'components/button',
-  'components/page-header',
-  'components/main-nav',
-  'components/site-list',
-  'components/programm-pick',
-  'components/categories',
-  'components/advantages',
-  'components/example',
-  'components/contacts',
-  'components/map',
-  'components/social',
-  'components/page-main',
-  'components/catalog',
-  'components/product',
-  'components/additional',
-  'components/gift',
-  'components/form';
+// 3. Components
+@import 'components/button';
+@import 'components/page-header';
+@import 'components/main-nav';
+@import 'components/site-list';
+@import 'components/programm-pick';
+@import 'components/categories';
+@import 'components/advantages';
+@import 'components/example';
+@import 'components/contacts';
+@import 'components/map';
+@import 'components/social';
+@import 'components/page-footer';
+@import 'components/page-main';
+@import 'components/catalog';
+@import 'components/product';
+@import 'components/additional';
+@import 'components/gift';
+@import 'components/form';

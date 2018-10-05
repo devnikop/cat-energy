@@ -6,16 +6,31 @@
 }
 
 .form__text {
+  margin: 0;
+
+  @include mobile-centering;
+
   font-size: 14px;
 }
 
+.form__text--top {
+  margin-bottom: 15px;
+}
+
 .form__group {
+  margin: 0;
+  padding: 20px;
+
   border: none;
   border-bottom: 1px solid #ededed;
 }
 
 .form__group--no-bottom-border {
   border-bottom: none;
+}
+
+.form__item-wrapper--comment {
+  @include mobile-centering;
 }
 
 .form__title {
@@ -25,6 +40,10 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
+}
+
+.form__item-wrapper {
+  margin: 0;
 }
 
 .form__input {

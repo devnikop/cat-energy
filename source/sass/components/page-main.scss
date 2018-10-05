@@ -1,10 +1,8 @@
-.page-main {
-  @include mobile-centering;
-}
-
 .page-main__title {
   margin: 0;
   margin-bottom: 15px;
+
+  @include mobile-centering;
 
   font-weight: 400;
   font-size: 36px;

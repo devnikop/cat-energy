@@ -1,3 +1,7 @@
+.additional {
+  @include mobile-centering;
+}
+
 .additional__title {
   font-weight: 400;
   font-size: 24px;
@@ -16,11 +20,11 @@
 }
 
 .additional__item {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional__item:last-of-type {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional__description {
