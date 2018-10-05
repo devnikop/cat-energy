@@ -1,0 +1,32 @@
+.categories {
+  @include mobile-centering;
+}
+
+.categories__list {
+  @include list-reset();
+}
+
+.categories__item {
+  padding-left: 20px;
+  padding-right: 25px;
+
+  background-color: $background-color;
+}
+
+.categories__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.categories__description {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  color: $second-color;
+}
+
+.categories__link {
+  font-size: 16px;
+  color: $main-color;
+}

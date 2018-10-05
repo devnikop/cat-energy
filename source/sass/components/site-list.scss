@@ -3,9 +3,9 @@
   font-size: 20px;
   line-height: 20px;
 
-  @include list-clear;
+  @include list-reset;
 }
 
 .site-list__link {
-  color: #111111;
+  color: $main-color;
 }

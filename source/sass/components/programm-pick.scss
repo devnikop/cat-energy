@@ -1,5 +1,5 @@
 .programm-pick {
-  min-width: 320px;
+  @include mobile-centering;
   height: 305px;
 
   text-align: center;

@@ -1,0 +1,41 @@
+.example {
+  @include mobile-centering;
+  background-color: $background-color;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__field {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost {
+  line-height: 20px;
+}
+
+.example__toggles-wrapper {
+  line-height: 20px;
+}
+
+.example__button {
+  padding: 0;
+
+  color: $main-color;
+
+  background-color: transparent;
+  border: none;
+}
