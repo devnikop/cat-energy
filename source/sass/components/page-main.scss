@@ -1,0 +1,24 @@
+.page-main {
+  @include mobile-centering;
+}
+
+.page-main__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.page-main__catalog {
+  margin-bottom: 30px;
+}
+
+.page-main__additional {
+  margin-bottom: 40px;
+}
+
+.page-main__gift {
+  margin-bottom: 35px;
+}

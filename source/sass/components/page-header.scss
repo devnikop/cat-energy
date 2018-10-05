@@ -1,3 +1,13 @@
-.page-header {
-  @include mobile-centering;
+.page-header__logo {
+  padding: 0 20px;
+}
+
+.site-list__item {
+  padding: 0 20px;
+
+  border-top: 1px solid #ededed;
+}
+
+.site-list__item:last-of-type {
+  border-bottom: 1px solid #ededed;
 }
