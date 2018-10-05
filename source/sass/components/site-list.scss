@@ -1,0 +1,11 @@
+.site-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+
+  @include list-clear;
+}
+
+.site-list__link {
+  color: #111111;
+}
