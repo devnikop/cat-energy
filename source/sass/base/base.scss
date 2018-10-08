@@ -1,5 +1,5 @@
 body {
-  width: 320px;  // temporarily
+  width: 320px; // temporarily
   margin: 0 auto;
 
   font-weight: 400;
@@ -15,11 +15,6 @@ a {
   text-decoration: none;
 }
 
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -33,7 +28,6 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  // -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;

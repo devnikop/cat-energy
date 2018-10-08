@@ -1,19 +1,15 @@
-@charset "UTF-8";
-
 // 1. Configurations and helpers
 @import "base/normalize";
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-
 // 2. Base stuff
 @import "base/fonts";
 @import "base/base";
 
-
 // 3. Components
 @import "components/button";
-@import "components/page-header";
+@import "components/header";
 @import "components/main-nav";
 @import "components/site-list";
 @import "components/programm-pick";
