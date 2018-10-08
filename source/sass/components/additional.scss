@@ -1,5 +1,5 @@
 .additional {
-  @include mobile-centering;
+  @include mobile-paddings;
 }
 
 .additional__title {
@@ -29,10 +29,10 @@
 
 .additional__description {
   line-height: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-text;
 }
 
 .additional__cost {
   line-height: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-text;
 }

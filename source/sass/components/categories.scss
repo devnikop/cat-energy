@@ -1,5 +1,5 @@
 .categories {
-  @include mobile-centering;
+  @include mobile-paddings;
 }
 
 .categories__list {
@@ -10,7 +10,7 @@
   padding-left: 20px;
   padding-right: 25px;
 
-  background-color: $gray;
+  background-color: $color-gray;
 }
 
 .categories__title {
@@ -23,12 +23,12 @@
 .categories__description {
   margin: 0;
 
-  font-family: "Arial", sans-serif;
-  color: $second-color;
+  font-family: $font-text;
+  color: $color-text;
 }
 
 .categories__link {
   font-size: 16px;
-  color: $main-color;
+  color: $color-title;
   text-transform: uppercase;
 }

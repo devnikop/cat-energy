@@ -1,6 +1,6 @@
 .example {
-  @include mobile-centering;
-  background-color: $gray;
+  @include mobile-paddings;
+  background-color: $color-gray;
 }
 
 .example__title {
@@ -10,7 +10,7 @@
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  font-family: $font-text;
 }
 
 .example__value {
@@ -36,7 +36,7 @@
 .example__button {
   padding: 0;
 
-  color: $main-color;
+  color: $color-title;
 
   background-color: transparent;
   border: none;

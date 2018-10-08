@@ -3,7 +3,7 @@
 }
 
 .catalog__footer {
-  @include mobile-centering;
+  @include mobile-paddings;
 
   border-bottom: 1px solid #ededed;
 }
@@ -16,6 +16,6 @@
 .catalog__text--small {
   font-size: 12px;
   line-height: 16px;
-  font-family: "Arial", sans-serif;
-  color: $second-color;
+  font-family: $font-text;
+  color: $color-text;
 }

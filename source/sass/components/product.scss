@@ -1,5 +1,5 @@
 .product {
-  @include mobile-centering;
+  @include mobile-paddings;
 
   border-top: 1px solid #ededed;
 }
@@ -11,11 +11,11 @@
 .product__title {
   line-height: 20px;
   font-weight: 400;
-  color: $main-color;
+  color: $color-title;
 }
 
 .product__features {
   font-size: 12px;
-  font-family: "Arial", sans-serif;
-  color: $second-color;
+  font-family: $font-text;
+  color: $color-text;
 }

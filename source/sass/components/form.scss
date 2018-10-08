@@ -8,7 +8,7 @@
 .form__text {
   margin: 0;
 
-  @include mobile-centering;
+  @include mobile-paddings;
 
   font-size: 14px;
 }
@@ -30,7 +30,7 @@
 }
 
 .form__item-wrapper--comment {
-  @include mobile-centering;
+  @include mobile-paddings;
 }
 
 .form__title {
