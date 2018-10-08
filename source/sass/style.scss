@@ -1,0 +1,28 @@
+// 1. Configurations and helpers
+@import "base/normalize";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Base stuff
+@import "base/fonts";
+@import "base/base";
+
+// 3. Components
+@import "components/button";
+@import "components/header";
+@import "components/main-nav";
+@import "components/site-list";
+@import "components/programm-pick";
+@import "components/categories";
+@import "components/advantages";
+@import "components/example";
+@import "components/contacts";
+@import "components/map";
+@import "components/social";
+@import "components/page-footer";
+@import "components/page-main";
+@import "components/catalog";
+@import "components/product";
+@import "components/additional";
+@import "components/gift";
+@import "components/form";

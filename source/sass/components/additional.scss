@@ -1,0 +1,38 @@
+.additional {
+  @include mobile-paddings;
+}
+
+.additional__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__list {
+  @include list-reset;
+}
+
+.additional__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional__item {
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional__item:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional__description {
+  line-height: 14px;
+  font-family: $font-text;
+}
+
+.additional__cost {
+  line-height: 14px;
+  font-family: $font-text;
+}

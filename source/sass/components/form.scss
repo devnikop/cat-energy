@@ -1,0 +1,66 @@
+.form {
+  margin-bottom: 35px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__text {
+  margin: 0;
+
+  @include mobile-paddings;
+
+  font-size: 14px;
+}
+
+.form__text--top {
+  margin-bottom: 15px;
+}
+
+.form__group {
+  margin: 0;
+  padding: 20px;
+
+  border: none;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__group--no-bottom-border {
+  border-bottom: none;
+}
+
+.form__item-wrapper--comment {
+  @include mobile-paddings;
+}
+
+.form__title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.form__item-wrapper {
+  margin: 0;
+}
+
+.form__input {
+  border: 1px solid #e7e7e7;
+}
+
+.form__input--comment {
+  width: 280px;
+  height: 150px;
+
+  resize: none;
+}
+
+.form__input::placeholder {
+  text-transform: uppercase;
+}
+
+.form__text--required {
+  text-transform: none;
+}

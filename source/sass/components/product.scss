@@ -1,0 +1,21 @@
+.product {
+  @include mobile-paddings;
+
+  border-top: 1px solid #ededed;
+}
+
+.product:last-of-type {
+  border-bottom: 1px solid #ededed;
+}
+
+.product__title {
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-title;
+}
+
+.product__features {
+  font-size: 12px;
+  font-family: $font-text;
+  color: $color-text;
+}

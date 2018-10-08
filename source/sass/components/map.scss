@@ -1,0 +1,22 @@
+.map {
+  width: 320px;
+  height: 362px;
+
+  margin: 0;
+  position: relative;
+  background-color: #f8f5ef;
+}
+
+.map__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map__iframe {
+  position: absolute;
+  top: 0;
+
+  border: none;
+}

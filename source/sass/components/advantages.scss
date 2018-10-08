@@ -1,0 +1,13 @@
+.advantages {
+  @include mobile-paddings;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantages__list {
+  @include list-reset();
+}

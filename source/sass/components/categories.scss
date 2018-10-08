@@ -1,0 +1,34 @@
+.categories {
+  @include mobile-paddings;
+}
+
+.categories__list {
+  @include list-reset();
+}
+
+.categories__item {
+  padding-left: 20px;
+  padding-right: 25px;
+
+  background-color: $color-gray;
+}
+
+.categories__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  margin: 0;
+
+  font-family: $font-text;
+  color: $color-text;
+}
+
+.categories__link {
+  font-size: 16px;
+  color: $color-title;
+  text-transform: uppercase;
+}

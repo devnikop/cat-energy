@@ -1,0 +1,21 @@
+.button {
+  display: block;
+
+  width: 100%;
+
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #68b738;
+  border: none;
+}
+
+.button--show-more {
+  color: $color-text;
+
+  background-color: $color-gray;
+}

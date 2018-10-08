@@ -1,0 +1,12 @@
+.site-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+
+  @include list-reset;
+}
+
+.site-list__link {
+  text-transform: uppercase;
+  color: $color-title;
+}

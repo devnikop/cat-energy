@@ -1,0 +1,21 @@
+.contacts {
+  @include mobile-paddings;
+}
+
+.contacts--main-page {
+  background-color: #ffffff;
+}
+
+.contacts__slogan {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-title;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  line-height: 20px;
+  font-family: $font-text;
+  color: $color-text;
+}

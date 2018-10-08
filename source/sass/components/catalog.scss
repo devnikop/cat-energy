@@ -1,0 +1,21 @@
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__footer {
+  @include mobile-paddings;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__text--big {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__text--small {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-text;
+  color: $color-text;
+}
