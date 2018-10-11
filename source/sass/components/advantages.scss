@@ -1,5 +1,6 @@
 .advantages {
   @include mobile-paddings;
+  margin: 0 auto;
 }
 
 .advantages__title {
@@ -13,12 +14,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .advantages__item {
     width: 354px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: $desktop-width;
+
+    @include desktop-paddings;
+  }
+
+  .advantages__item {
+    width: 245px;
   }
 }

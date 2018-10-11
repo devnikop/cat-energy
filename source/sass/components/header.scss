@@ -1,4 +1,6 @@
 .header {
+  margin: 0 auto;
+
   outline: 1px solid rebeccapurple;
 }
 
@@ -12,11 +14,11 @@
 
 @media (max-width: $tablet-width) {
   .header__logo {
-    padding: 0 20px;
+    @include mobile-paddings;
   }
 
   .site-list__item {
-    padding: 0 20px;
+    @include mobile-paddings;
   }
 }
 
@@ -24,5 +26,16 @@
   .header {
     display: flex;
     justify-content: space-between;
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: $desktop-width;
+
+    @include desktop-paddings;
   }
 }

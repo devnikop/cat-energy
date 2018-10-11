@@ -1,6 +1,11 @@
 .example {
+  background-color: $bg-color-gray;
+}
+
+.example__inner {
+  margin: 0 auto;
+
   @include mobile-paddings;
-  background-color: $color-gray;
 }
 
 .example__title {
@@ -43,8 +48,36 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example__wrapper {
+  .example__inner {
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+
+  .example__wrapper-info {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__inner {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+
+    @include desktop-paddings;
+  }
+
+  .example__wrapper {
+    width: 610px;
+  }
+
+  .example__wrapper-info {
+    flex-wrap: wrap;
+  }
+
+  .example__list {
+    width: 100%;
   }
 }

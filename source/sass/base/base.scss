@@ -1,7 +1,4 @@
 body {
-  width: 320px; // temporarily
-  margin: 0 auto;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -24,17 +21,24 @@ input[type="radio"].visually-hidden {
   height: 1px;
   margin: -1px;
   padding: 0;
-  border: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  border: 0;
+
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(100%);
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    width: $tablet-width;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   body {
+//     width: $tablet-width;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   body {
+//     width: $desktop-width;
+//   }
+// }

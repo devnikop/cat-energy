@@ -1,11 +1,13 @@
 .programm-pick {
-  @include mobile-paddings;
   height: 305px;
+  margin: 0 auto;
 
   text-align: center;
   color: hsl(0, 0%, 100%);
 
   outline: 1px solid rebeccapurple;
+
+  @include mobile-paddings;
 }
 
 .programm-pick__text {
@@ -28,6 +30,21 @@
 
 @media (min-width: $tablet-width) {
   .programm-pick {
+    width: $tablet-width;
+    min-height: 820px;
+
     color: $color-title;
+
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-pick {
+    width: $desktop-width;
+    // width: 570px;
+    padding-left: 191px;
+
+    @include desktop-paddings;
   }
 }

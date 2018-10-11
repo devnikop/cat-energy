@@ -1,4 +1,6 @@
-.contacts {
+.contacts__wrapper {
+  margin: 0 auto;
+
   @include mobile-paddings;
 }
 
@@ -21,8 +23,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
+  .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    z-index: 1;
+
+    width: 570px;
+
+    background-color: #ffffff;
   }
 }
