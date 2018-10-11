@@ -19,3 +19,10 @@
   font-family: $font-text;
   color: $color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+}

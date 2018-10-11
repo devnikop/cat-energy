@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -81,17 +82,19 @@
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
         16 часов в день.
       </p>
-      <table class="example__list">
-        <tr>
-          <td class="example__value">5 кг</td>
-          <td class="example__field">снижение веса</td>
-        </tr>
-        <tr>
-          <td class="example__value">60 дней</td>
-          <td class="example__field">затрачено времени</td>
-        </tr>
-      </table>
-      <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+      <div class="example__wrapper">
+        <table class="example__list">
+          <tr>
+            <td class="example__value">5 кг</td>
+            <td class="example__field">снижение веса</td>
+          </tr>
+          <tr>
+            <td class="example__value">60 дней</td>
+            <td class="example__field">затрачено времени</td>
+          </tr>
+        </table>
+        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+      </div>
       <img class="example__image" src="img/before-mobile@1x.png" width="331" height="232" alt="Кот до перехода на новый корм">
       <div class="example__toggles-wrapper">
         <button class="example__button example__button--before button" type="button">Было</button>
@@ -113,29 +116,32 @@
         width="320" height="362" allowfullscreen>
       </iframe>
     </p>
-    <a class="logo">
-      <img class="logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип сайта">
-    </a>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">
-          <span class="visually-hidden">Мы в вконтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="#">
-          <span class="visually-hidden">Мы в инстаграме</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">
-          <span class="visually-hidden">Мы в фейсбуке</span>
-        </a>
-      </li>
-    </ul>
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="footer-wrapper">
+      <a class="logo">
+        <img class="logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип сайта">
+      </a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <span class="visually-hidden">Мы в вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Мы в инстаграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в фейсбуке</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
+
   </footer>
 
 </body>

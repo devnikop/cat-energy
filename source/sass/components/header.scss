@@ -1,13 +1,28 @@
-.header__logo {
-  padding: 0 20px;
+.header {
+  outline: 1px solid rebeccapurple;
 }
 
 .site-list__item {
-  padding: 0 20px;
-
   border-top: 1px solid #ededed;
 }
 
 .site-list__item:last-of-type {
   border-bottom: 1px solid #ededed;
+}
+
+@media (max-width: $tablet-width) {
+  .header__logo {
+    padding: 0 20px;
+  }
+
+  .site-list__item {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
 }

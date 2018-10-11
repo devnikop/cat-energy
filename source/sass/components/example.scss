@@ -41,3 +41,10 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

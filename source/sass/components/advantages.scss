@@ -11,3 +11,14 @@
 .advantages__list {
   @include list-reset();
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 354px;
+  }
+}
