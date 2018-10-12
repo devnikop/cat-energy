@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy: Каталог продукции</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -54,7 +55,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-pro-chicken-500.html">
-            <img class="product__image product__image--1" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO Курица 500 г">
+            <img class="product__image product__image--1" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy PRO Курица 500 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -77,7 +79,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-pro-chicken-1000.html">
-            <img class="product__image product__image--2" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO Курица 1000 г">
+            <img class="product__image product__image--2" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy PRO Курица 1000 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -100,7 +103,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-pro-fish-500.html">
-            <img class="product__image product__image--3" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO Рыба 500 г">
+            <img class="product__image product__image--3" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy PRO Рыба 500 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -146,7 +150,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-slim-buckwheat-500.html">
-            <img class="product__image product__image--5" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM Гречка 500 г">
+            <img class="product__image product__image--5" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy SLIM Гречка 500 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -169,7 +174,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-slim-buckwheat-1000.html">
-            <img class="product__image product__image--6" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM Гречка 1000 г">
+            <img class="product__image product__image--6" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy SLIM Гречка 1000 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -192,7 +198,8 @@
             </tr>
           </table>
           <a class="product__image-link" href="cat-energy-slim-rice-500.html">
-            <img class="product__image product__image--7" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy SLIM Рис 500 г">
+            <img class="product__image product__image--7" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
+              alt="Cat Energy SLIM Рис 500 г">
           </a>
           <a class="product__order-button button" href="order.html">Заказать</a>
         </li>
@@ -251,8 +258,10 @@
 
   <footer class="footer">
     <div class="contacts">
-      <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
     </div>
     <p class="map">
       <img class="map__fallback" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта с местоположением офиса">
@@ -261,28 +270,30 @@
         width="320" height="362" allowfullscreen>
       </iframe>
     </p>
-    <a class="logo" href="index.html">
+    <div class="footer-wrapper">
+      <a class="logo" href="index.html">
         <img class="logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип сайта">
       </a>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">
-          <span class="visually-hidden">Мы в вконтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="#">
-          <span class="visually-hidden">Мы в инстаграме</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">
-          <span class="visually-hidden">Мы в фейсбуке</span>
-        </a>
-      </li>
-    </ul>
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <span class="visually-hidden">Мы в вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Мы в инстаграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Мы в фейсбуке</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 
