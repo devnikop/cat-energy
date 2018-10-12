@@ -8,9 +8,9 @@
 .form__text {
   margin: 0;
 
-  @include mobile-paddings;
-
   font-size: 14px;
+
+  @include mobile-paddings;
 }
 
 .form__text--top {

@@ -2,11 +2,11 @@
   margin: 0;
   margin-bottom: 15px;
 
-  @include mobile-paddings;
-
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
+
+  @include mobile-paddings;
 }
 
 .page-main__catalog {

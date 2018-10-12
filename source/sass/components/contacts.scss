@@ -22,7 +22,7 @@
   color: $color-text;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width-media) {
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width-media) {
   .contacts__wrapper {
     position: absolute;
     top: 70px;

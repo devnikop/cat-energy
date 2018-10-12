@@ -1,4 +1,6 @@
 body {
+  min-width: 360px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -7,6 +9,11 @@ body {
 
   background-color: #ffffff;
 }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 a {
   text-decoration: none;
@@ -30,15 +37,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
-
-// @media (min-width: $tablet-width) {
-//   body {
-//     width: $tablet-width;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   body {
-//     width: $desktop-width;
-//   }
-// }

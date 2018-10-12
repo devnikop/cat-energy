@@ -3,9 +3,9 @@
 }
 
 .catalog__footer {
-  @include mobile-paddings;
-
   border-bottom: 1px solid #ededed;
+
+  @include mobile-paddings;
 }
 
 .catalog__text--big {

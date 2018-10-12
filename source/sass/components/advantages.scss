@@ -1,6 +1,7 @@
 .advantages {
-  @include mobile-paddings;
   margin: 0 auto;
+
+  @include mobile-paddings;
 }
 
 .advantages__title {
@@ -13,7 +14,7 @@
   @include list-reset();
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width-media) {
   .advantages {
     width: $tablet-width;
 
@@ -31,7 +32,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width-media) {
   .advantages {
     width: $desktop-width;
 

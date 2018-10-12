@@ -7,20 +7,21 @@
 }
 
 .site-list__link {
-  text-transform: uppercase;
   color: $color-title;
+  text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width-media) {
   .site-list {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width-media) {
   .site-list__link {
     color: #ffffff;
+
     background-color: #000000;
   }
 }
