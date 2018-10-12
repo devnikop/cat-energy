@@ -1,13 +1,3 @@
-.product {
-  border-top: 1px solid #ededed;
-
-  @include mobile-paddings;
-}
-
-.product:last-of-type {
-  border-bottom: 1px solid #ededed;
-}
-
 .product__title {
   font-weight: 400;
   line-height: 20px;
@@ -16,6 +6,48 @@
 
 .product__features {
   font-size: 12px;
+  line-height: 16px;
   font-family: $font-text;
   color: $color-text;
+}
+
+.product__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-text;
+  color: $color-text;
+}
+
+@media (max-width: $tablet-width-media) {
+  .product {
+    border-top: 1px solid #ededed;
+
+    @include mobile-paddings;
+  }
+
+  .product:last-of-type {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $tablet-width-media) {
+  .product {
+    width: 324px;
+    margin-left: 60px;
+  }
+
+  .product:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .product {
+    width: 245px;
+    margin-left: 80px;
+  }
+
+  .product:nth-of-type(4n) {
+    margin-right: 0;
+  }
 }
