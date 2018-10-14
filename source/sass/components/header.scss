@@ -4,14 +4,6 @@
   outline: 1px solid rebeccapurple;
 }
 
-.site-list__item {
-  border-top: 1px solid #ededed;
-}
-
-.site-list__item:last-of-type {
-  border-bottom: 1px solid #ededed;
-}
-
 @media (max-width: $tablet-width-media) {
   .header__logo {
     @include mobile-paddings;

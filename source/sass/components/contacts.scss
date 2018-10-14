@@ -1,4 +1,11 @@
+.contacts {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
 
   @include mobile-paddings;
@@ -9,6 +16,7 @@
 }
 
 .contacts__slogan {
+  width: 140px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -17,6 +25,9 @@
 }
 
 .contacts__text {
+  width: 140px;
+  margin: 0;
+
   line-height: 20px;
   font-family: $font-text;
   color: $color-text;

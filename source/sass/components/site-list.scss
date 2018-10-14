@@ -6,6 +6,10 @@
   @include list-reset;
 }
 
+.site-list__item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .site-list__link {
   color: $color-title;
   text-transform: uppercase;

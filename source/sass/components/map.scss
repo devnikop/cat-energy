@@ -8,6 +8,13 @@
   background-color: #f8f5ef;
 }
 
+.map__fallback {
+  display: block;
+  width: 320px;
+  height: 362px;
+  margin: 0 auto;
+}
+
 .map__pin {
   position: absolute;
   top: 50%;
