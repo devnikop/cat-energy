@@ -1,10 +1,11 @@
 .header {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 
   outline: 1px solid rebeccapurple;
 }
 
-@media (max-width: $tablet-width-media) {
+@media (max-width: $tablet-width-media - 1) {
   .header__logo {
     @include mobile-paddings;
   }
@@ -19,15 +20,23 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
-
-    @include tablet-paddings;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .header {
+    position: relative;
     width: $desktop-width;
+  }
 
-    @include desktop-paddings;
+  .header::after {
+    content: "";
+    width: 720px;
+    height: 698px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    position: absolute;
+    right: 0;
+    top: -24px;
+    z-index: -1;
   }
 }

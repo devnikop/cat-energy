@@ -38,3 +38,21 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+@media (min-width: $tablet-width-media) {
+  body {
+    margin-top: 24px;
+  }
+
+  .body__header {
+    margin-bottom: 60px;
+
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .body__header {
+    @include desktop-paddings;
+  }
+}

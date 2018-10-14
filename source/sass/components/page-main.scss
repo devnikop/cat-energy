@@ -1,3 +1,9 @@
+.page-main__title,
+.page-main__categories,
+.page-main__advantages {
+  @include mobile-paddings;
+}
+
 .page-main__title {
   margin: 0;
   margin-bottom: 15px;
@@ -5,12 +11,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-
-  @include mobile-paddings;
-}
-
-.page-main__programm-pick {
-  margin-bottom: 22px;
 }
 
 .page-main__categories {
@@ -27,4 +27,30 @@
 
 .page-main__additional {
   margin-bottom: 40px;
+}
+
+@media (max-width: $tablet-width-media - 1) {
+  .page-main__programm-pick {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width-media) {
+  .page-main__programm-pick,
+  .page-main__categories,
+  .page-main__advantages {
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .page-main__programm-pick,
+  .page-main__categories,
+  .page-main__advantages {
+    @include desktop-paddings;
+  }
+
+  .page-main__programm-pick {
+    margin-bottom: 80px;
+  }
 }

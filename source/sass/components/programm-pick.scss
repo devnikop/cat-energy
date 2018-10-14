@@ -2,16 +2,14 @@
   min-height: 305px;
   margin: 0 auto;
 
-  text-align: center;
   color: hsl(0, 0%, 100%);
 
   outline: 1px solid rebeccapurple;
-
-  @include mobile-paddings;
 }
 
 .programm-pick__text {
   margin: 0;
+
   font-size: 36px;
   line-height: 36px;
 }
@@ -22,8 +20,10 @@
   text-transform: uppercase;
 }
 
-@media (max-width: $tablet-width-media) {
+@media (max-width: $tablet-width-media - 1) {
   .programm-pick {
+    text-align: center;
+
     background-color: hsl(97, 48%, 44%);
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -37,18 +37,29 @@
     min-height: 820px;
 
     color: $color-title;
+  }
 
-    @include tablet-paddings;
+  .programm-pick__text {
+    width: 427px;
+    margin-left: 90px;
+    margin-bottom: 25px;
+  }
+
+  .programm-pick__slogan {
+    display: block;
+    margin-left: 90px;
+    margin-bottom: 45px;
+  }
+
+  .programm-pick__button {
+    width: 245px;
+    margin-left: 90px;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .programm-pick {
     width: $desktop-width;
-    // width: 570px;
-    min-height: 580px;
-    padding-left: 191px;
-
-    @include desktop-paddings;
+    min-height: 547px;
   }
 }

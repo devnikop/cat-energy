@@ -17,6 +17,7 @@
 
 .contacts__slogan {
   width: 140px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -34,22 +35,42 @@
 }
 
 @media (min-width: $tablet-width-media) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
   .contacts__wrapper {
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
   }
+
+  .contacts__slogan {
+    width: 160px;
+  }
+
+  .contacts__text {
+    width: 160px;
+  }
 }
 
 @media (min-width: $desktop-width-media) {
-  .contacts__wrapper {
+  .contacts {
     position: absolute;
-    top: 70px;
+    top: 100px;
     left: 110px;
     z-index: 1;
 
+    box-sizing: border-box;
     width: 570px;
+    padding: 55px 75px;
 
     background-color: #ffffff;
+  }
+
+  .contacts__wrapper {
+    width: auto;
+    padding: 0;
   }
 }

@@ -1,7 +1,5 @@
 .advantages {
   margin: 0 auto;
-
-  @include mobile-paddings;
 }
 
 .advantages__title {
@@ -20,8 +18,7 @@
 @media (min-width: $tablet-width-media) {
   .advantages {
     width: $tablet-width;
-
-    @include tablet-paddings;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .advantages__list {
@@ -38,8 +35,6 @@
 @media (min-width: $desktop-width-media) {
   .advantages {
     width: $desktop-width;
-
-    @include desktop-paddings;
   }
 
   .advantages__item {

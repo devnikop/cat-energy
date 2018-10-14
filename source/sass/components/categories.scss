@@ -1,7 +1,5 @@
 .categories {
   margin: 0 auto;
-
-  @include mobile-paddings;
 }
 
 .categories__list {
@@ -44,16 +42,22 @@
 @media (min-width: $tablet-width-media) {
   .categories {
     width: $tablet-width;
+  }
 
-    @include tablet-paddings;
+  .categories__item {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 52px;
+  }
+
+  .categories__item:first-of-type {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .categories {
     width: $desktop-width;
-
-    @include desktop-paddings;
   }
 
   .categories__list {
@@ -62,6 +66,11 @@
   }
 
   .categories__item {
+    box-sizing: border-box;
     width: 570px;
+  }
+
+  .categories__item:first-of-type {
+    margin-bottom: 0;
   }
 }

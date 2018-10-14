@@ -2,14 +2,14 @@
   background-color: $bg-color-gray;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   margin: 0 auto;
 
   @include mobile-paddings;
 }
 
 @media (min-width: $tablet-width-media) {
-  .footer-wrapper {
+  .footer__wrapper {
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
@@ -23,7 +23,7 @@
     position: relative;
   }
 
-  .footer-wrapper {
+  .footer__wrapper {
     width: $desktop-width;
 
     @include desktop-paddings;

@@ -18,7 +18,7 @@
   color: $color-text;
 }
 
-@media (max-width: $tablet-width-media) {
+@media (max-width: $tablet-width-media - 1) {
   .product {
     border-top: 1px solid #ededed;
 

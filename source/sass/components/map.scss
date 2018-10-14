@@ -1,8 +1,6 @@
 .map {
   position: relative;
 
-  width: 100%;
-  height: 362px;
   margin: 0;
 
   background-color: #f8f5ef;
@@ -31,4 +29,14 @@
   width: 100%;
 
   border: none;
+}
+
+@media (min-width: $tablet-width-media) {
+  .map__fallback {
+    height: 398px;
+  }
+
+  .map__iframe {
+    height: 398px;
+  }
 }

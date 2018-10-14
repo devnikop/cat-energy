@@ -19,13 +19,16 @@
   .site-list {
     display: flex;
     justify-content: space-between;
+    padding-left: 75px;
+  }
+
+  .site-list__item {
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .site-list__link {
     color: #ffffff;
-
-    background-color: #000000;
   }
 }
