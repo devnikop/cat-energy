@@ -1,4 +1,8 @@
 .additional {
+  margin: 0 auto;
+
+  outline: 1px solid rebeccapurple;
+
   @include mobile-paddings;
 }
 
@@ -35,4 +39,76 @@
 .additional__cost {
   line-height: 14px;
   font-family: $font-text;
+}
+
+@media (min-width: $tablet-width-media) {
+  .additional {
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 1px solid $border-color-tablet;
+    border-bottom: none;
+  }
+
+  .additional__item:last-of-type {
+    border-bottom: 1px solid $border-color-tablet;
+  }
+
+  .additional__item-title {
+    width: 286px;
+  }
+
+  .additional__text {
+    display: flex;
+    justify-content: flex-end;
+    width: 286px;
+
+    text-align: right;
+  }
+
+  .additional__cost {
+    flex-shrink: 0;
+    width: 95px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .additional {
+    width: $desktop-width;
+
+    @include desktop-paddings;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__list {
+    width: 895px;
+  }
+
+  .additional__item {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional__item:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional__order-button {
+    width: 245px;
+  }
+
+  .additional__text {
+    justify-content: space-between;
+  }
 }

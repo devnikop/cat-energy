@@ -7,6 +7,8 @@
     width: $tablet-width;
     margin: 0 auto;
 
+    outline: 1px solid rebeccapurple;
+
     @include tablet-paddings;
   }
 
