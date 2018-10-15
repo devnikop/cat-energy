@@ -28,23 +28,17 @@
 }
 
 .example__list {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 35px;
 }
 
-.example__list tbody {
-  display: flex;
-  justify-content: space-between;
-}
-
-.example__list tr {
+.example__item {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .example__value {
+  display: block;
   width: 124px;
   padding: 12px 0;
 
@@ -117,11 +111,11 @@
     justify-content: space-between;
   }
 
-  .example__list tbody {
+  .example__list {
     justify-content: flex-start;
   }
 
-  .example__list tr {
+  .example__item {
     margin-right: 42px;
   }
 
@@ -161,10 +155,6 @@
 
   .example__wrapper-info {
     flex-wrap: wrap;
-  }
-
-  .example__list {
-    width: 100%;
   }
 
   .example__field {
