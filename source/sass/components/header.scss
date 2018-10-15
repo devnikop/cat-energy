@@ -29,7 +29,7 @@
     width: $desktop-width;
   }
 
-  .header::after {
+  .header--main-page::after {
     content: "";
     width: 720px;
     height: 698px;

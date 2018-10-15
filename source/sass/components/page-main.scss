@@ -1,16 +1,8 @@
-.page-main__title,
 .page-main__categories,
-.page-main__advantages {
+.page-main__advantages,
+.page-main__title,
+.page-main__additional {
   @include mobile-paddings;
-}
-
-.page-main__title {
-  margin: 0;
-  margin-bottom: 15px;
-
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 60px;
 }
 
 .page-main__categories {
@@ -19,6 +11,15 @@
 
 .page-main__advantages {
   margin-bottom: 42px;
+}
+
+.page-main__title {
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
 }
 
 .page-main__catalog {
@@ -38,19 +39,50 @@
 @media (min-width: $tablet-width-media) {
   .page-main__programm-pick,
   .page-main__categories,
-  .page-main__advantages {
+  .page-main__advantages,
+  .page-main__title,
+  .page-main__catalog,
+  .page-main__additional {
     @include tablet-paddings;
+  }
+
+  .page-main__title {
+    width: $tablet-width;
+    margin-bottom: 45px;
+  }
+
+  .page-main__catalog {
+    margin-bottom: 65px;
+  }
+
+  .page-main__additional {
+    margin-bottom: 75px;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .page-main__programm-pick,
   .page-main__categories,
-  .page-main__advantages {
+  .page-main__advantages,
+  .page-main__title,
+  .page-main__catalog,
+  .page-main__additional {
     @include desktop-paddings;
   }
 
   .page-main__programm-pick {
     margin-bottom: 80px;
+  }
+
+  .page-main__title {
+    width: $desktop-width;
+  }
+
+  .page-main__catalog {
+    margin-bottom: 75px;
+  }
+
+  .page-main__additional {
+    margin-bottom: 85px;
   }
 }

@@ -1,12 +1,14 @@
 .additional {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 
   outline: 1px solid rebeccapurple;
-
-  @include mobile-paddings;
 }
 
 .additional__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -44,8 +46,10 @@
 @media (min-width: $tablet-width-media) {
   .additional {
     width: $tablet-width;
+  }
 
-    @include tablet-paddings;
+  .additional__title {
+    margin-bottom: 65px;
   }
 
   .additional__item {
@@ -82,8 +86,10 @@
 @media (min-width: $desktop-width-media) {
   .additional {
     width: $desktop-width;
+  }
 
-    @include desktop-paddings;
+  .additional__title {
+    margin-bottom: 75px;
   }
 
   .additional__wrapper {

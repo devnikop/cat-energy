@@ -5,11 +5,10 @@
 @media (min-width: $tablet-width-media) {
   .catalog {
     width: $tablet-width;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 
     outline: 1px solid rebeccapurple;
-
-    @include tablet-paddings;
   }
 
   .catalog__list {
@@ -22,9 +21,6 @@
 @media (min-width: $desktop-width-media) {
   .catalog {
     width: $desktop-width;
-    margin: 0 auto;
-
-    @include desktop-paddings;
   }
 
   .catalog__list {
