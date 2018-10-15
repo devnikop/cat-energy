@@ -33,70 +33,82 @@
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
 
-    <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+    <form class="page-main__form form" method="POST" action="https://echo.htmlacademy.ru">
       <p class="form__text form__text--top">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="form__group-wrapper">
+        <fieldset class="form__group">
+          <legend class="visually-hidden">Основные данные</legend>
+          <p class="form__item-wrapper">
+            <label class="form__label" for="id-name">Имя:*</label>
+            <input class="form__input" id="id-name" type="text" name="name" placeholder="Барсик" required>
+          </p>
+          <p class="form__item-wrapper">
+            <label class="form__label" for="id-weight">Вес (кг):*</label>
+            <input class="form__input" id="id-weight" type="text" name="weight" placeholder="7" required>
+          </p>
+          <p class="form__item-wrapper">
+            <label class="form__label" for="id-age">Возраст (лет):</label>
+            <input class="form__input" id="id-age" type="text" name="age" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__group form__group--radio">
+          <legend class="visually-hidden">Выбор программы питания</legend>
+          <p class="form__item-wrapper form__item-wrapper--radio">
+            <input class="visually-hidden" id="id-weight-shrink" type="radio" name="programm-pick" checked>
+            <label class="form__label form__label--radio" for="id-weight-shrink">Похудение</label>
+            <input class="visually-hidden" id="id-weight-grow" type="radio" name="programm-pick">
+            <label class="form__label form__label--radio" for="id-weight-grow">Набор массы</label>
+            <input class="visually-hidden" id="id-need-advice" type="radio" name="programm-pick">
+            <label class="form__label form__label--radio" for="id-need-advice">Не знаю (Нужен ваш совет)</label>
+          </p>
+        </fieldset>
+      </div>
       <fieldset class="form__group">
-        <legend class="visually-hidden">Основные данные</legend>
-        <p class="form__item-wrapper">
-          <label class="form__label" for="id-name">Имя:*</label>
-          <input class="form__input" id="id-name" type="text" name="name" placeholder="Барсик" required>
-        </p>
-        <p class="form__item-wrapper">
-          <label class="form__label" for="id-weight">Вес (кг):*</label>
-          <input class="form__input" id="id-weight" type="text" name="weight" placeholder="7" required>
-        </p>
-        <p class="form__item-wrapper">
-          <label class="form__label" for="id-age">Возраст (лет):</label>
-          <input class="form__input" id="id-age" type="text" name="age" placeholder="7">
-        </p>
-      </fieldset>
-      <fieldset class="form__group">
-        <legend class="visually-hidden">Выбор программы питания</legend>
-        <p class="form__item-wrapper">
-          <input id="id-weight-shrink" type="radio" name="programm-pick" checked>
-          <label class="form__label" for="id-weight-shrink">Похудение</label>
-          <input id="id-weight-grow" type="radio" name="programm-pick">
-          <label class="form__label" for="id-weight-grow">Набор массы</label>
-          <input id="id-need-advice" type="radio" name="programm-pick">
-          <label class="form__label" for="id-need-advice">Не знаю (Нужен ваш совет)</label>
-        </p>
-      </fieldset>
-      <fieldset class="form__group form__group--no-bottom-border">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
-        <p class="form__item-wrapper">
-          <label class="form__label" for="id-email">E-mail:*</label>
-          <input class="form__input" id="id-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </p>
-        <p class="form__item-wrapper">
-          <label class="form__label" for="id-tel">Телефон:*</label>
-          <input class="form__input" id="id-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-        </p>
+        <div class="form__group-inner">
+          <p class="form__item-wrapper form__item-wrapper--contacts">
+            <label class="form__label" for="id-email">E-mail:*</label>
+            <input class="form__input" id="id-email" type="email" name="email" placeholder="kuklachev@gmail.com"
+              required>
+          </p>
+          <p class="form__item-wrapper form__item-wrapper--contacts">
+            <label class="form__label" for="id-tel">Телефон:*</label>
+            <input class="form__input" id="id-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </p>
       </fieldset>
-      <p class="form__item-wrapper form__item-wrapper--comment">
-        <label class="form__title" for="id-comment">Комментарий</label>
-        <textarea class="form__input form__input--comment" id="id-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </p>
+      <fieldset class="form__group">
+        <legend class="form__title">Комментарий</legend>
+        <p class="form__item-wrapper">
+          <label class="visually-hidden" for="id-comment">Комментарий</label>
+          <textarea class="form__input form__input--comment" id="id-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
+        </div>
+      </fieldset>
       <fieldset class="form__group">
         <legend class="form__title">Дополнительно</legend>
-        <p class="form__item-wrapper">
-          <input class="visually-hidden" id="id-sweetener" name="sweetener" type="checkbox" checked>
-          <label class="form__label" for="id-sweetener">Сахарозаменитель</label>
-        </p>
-        <p class="form__item-wrapper">
-          <input class="visually-hidden" id="id-water" name="water" type="checkbox">
-          <label class="form__label" for="id-water">Питьевая вода</label>
-        </p>
-        <p class="form__item-wrapper">
-          <input class="visually-hidden" id="id-milk" name="milk" type="checkbox">
-          <label class="form__label" for="id-milk">Молоко</label>
-        </p>
-        <p class="form__item-wrapper">
-          <input class="visually-hidden" id="id-vitamin" name="vitamin" type="checkbox">
-          <label class="form__label" for="id-vitamin">Витамины</label>
-        </p>
+        <div class="form__group-inner">
+          <p class="form__item-wrapper form__item-wrapper--checkbox">
+            <input class="visually-hidden" id="id-sweetener" name="sweetener" type="checkbox" checked>
+            <label class="form__label form__label--checkbox" for="id-sweetener">Сахарозаменитель</label>
+          </p>
+          <p class="form__item-wrapper form__item-wrapper--checkbox">
+            <input class="visually-hidden" id="id-water" name="water" type="checkbox">
+            <label class="form__label form__label--checkbox" for="id-water">Питьевая вода</label>
+          </p>
+          <p class="form__item-wrapper form__item-wrapper--checkbox">
+            <input class="visually-hidden" id="id-milk" name="milk" type="checkbox">
+            <label class="form__label form__label--checkbox" for="id-milk">Молоко</label>
+          </p>
+          <p class="form__item-wrapper form__item-wrapper--checkbox">
+            <input class="visually-hidden" id="id-vitamin" name="vitamin" type="checkbox">
+            <label class="form__label form__label--checkbox" for="id-vitamin">Витамины</label>
+          </p>
+        </div>
       </fieldset>
-      <button class="button" type="submit">Отправить заявку</button>
-      <p class="form__text form__text--required">* — Обязательные поля</p>
+      <footer class="form__footer">
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <p class="form__text form__text--required">* — Обязательные поля</p>
+      </footer>
     </form>
 
   </main>

@@ -30,6 +30,10 @@
   margin-bottom: 40px;
 }
 
+.page-main__form {
+  margin-bottom: 35px;
+}
+
 @media (max-width: $tablet-width-media - 1) {
   .page-main__programm-pick {
     margin-bottom: 22px;
@@ -58,6 +62,11 @@
   .page-main__additional {
     margin-bottom: 75px;
   }
+
+  .page-main__form {
+    padding-right: 65px;
+    padding-left: 70px;
+  }
 }
 
 @media (min-width: $desktop-width-media) {
@@ -66,7 +75,8 @@
   .page-main__advantages,
   .page-main__title,
   .page-main__catalog,
-  .page-main__additional {
+  .page-main__additional,
+  .page-main__form {
     @include desktop-paddings;
   }
 

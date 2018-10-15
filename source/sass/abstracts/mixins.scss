@@ -6,13 +6,16 @@
 }
 
 @mixin mobile-paddings {
-  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @mixin tablet-paddings {
-  padding: 0 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 @mixin desktop-paddings {
-  padding: 0 110px;
+  padding-right: 110px;
+  padding-left: 110px;
 }
