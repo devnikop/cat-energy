@@ -1,0 +1,31 @@
+.footer {
+  background-color: $bg-color-gray;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+
+  @include mobile-paddings;
+}
+
+@media (min-width: $tablet-width-media) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__wrapper {
+    width: $desktop-width;
+
+    @include desktop-paddings;
+  }
+}

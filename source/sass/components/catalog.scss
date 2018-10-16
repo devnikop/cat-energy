@@ -2,20 +2,26 @@
   @include list-reset;
 }
 
-.catalog__footer {
-  @include mobile-paddings;
+@media (min-width: $tablet-width-media) {
+  .catalog {
+    width: $tablet-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-  border-bottom: 1px solid #ededed;
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -60px;
+  }
 }
 
-.catalog__text--big {
-  font-size: 16px;
-  line-height: 20px;
-}
+@media (min-width: $desktop-width-media) {
+  .catalog {
+    width: $desktop-width;
+  }
 
-.catalog__text--small {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: $font-text;
-  color: $color-text;
+  .catalog__list {
+    margin-left: -80px;
+  }
 }

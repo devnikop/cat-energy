@@ -1,6 +1,8 @@
 .social {
-  border-top: 1px solid #f8f5ef;
-  border-bottom: 1px solid #f8f5ef;
+  height: 62px; // temporarily
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
   @include list-reset();
 }

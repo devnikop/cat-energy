@@ -1,32 +1,85 @@
 .example {
+  padding-top: 20px;
+  padding-bottom: 35px;
+
+  background-color: $bg-color-gray;
+}
+
+.example__inner {
+  margin: 0 auto;
+
   @include mobile-paddings;
-  background-color: $color-gray;
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 15px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
 }
 
 .example__description {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-family: $font-text;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.example__item {
+  position: relative;
+}
+
 .example__value {
+  display: block;
+  width: 124px;
+  padding: 12px 0;
+
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 1px;
 }
 
 .example__field {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 86px;
+  padding: 0 15px;
+
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+
+  background-color: $bg-color-gray;
+  transform: translate(-50%);
 }
 
 .example__cost {
+  margin: 0;
+
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.example__image {
+  width: 331px;
+  height: 232px;
 }
 
 .example__toggles-wrapper {
@@ -40,4 +93,77 @@
 
   background-color: transparent;
   border: none;
+}
+
+@media (min-width: $tablet-width-media) {
+  .example {
+    background-image: linear-gradient(#ffffff 60%, $bg-color-gray 60%);
+  }
+
+  .example__inner {
+    width: $tablet-width;
+
+    @include tablet-paddings;
+  }
+
+  .example__wrapper-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__list {
+    justify-content: flex-start;
+  }
+
+  .example__item {
+    margin-right: 42px;
+  }
+
+  .example__value {
+    width: 162px;
+  }
+
+  .example__field {
+    padding: 0 8px;
+
+    background-color: #ffffff;
+  }
+
+  .example__cost {
+    width: 165px;
+
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .example {
+    background-image: linear-gradient(#ffffff 30%, $bg-color-gray 30%);
+  }
+
+  .example__inner {
+    display: flex;
+    justify-content: space-between;
+    width: $desktop-width;
+
+    @include desktop-paddings;
+  }
+
+  .example__wrapper {
+    width: 610px;
+  }
+
+  .example__wrapper-info {
+    flex-wrap: wrap;
+  }
+
+  .example__field {
+    background-color: $bg-color-gray;
+  }
+
+  .example__cost {
+    width: 325px;
+
+    text-align: left;
+  }
 }

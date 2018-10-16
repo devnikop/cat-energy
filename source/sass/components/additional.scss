@@ -1,8 +1,12 @@
 .additional {
-  @include mobile-paddings;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .additional__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -21,10 +25,10 @@
 
 .additional__item {
   border-top: 1px solid #cdcdcd;
-}
 
-.additional__item:last-of-type {
-  border-bottom: 1px solid #cdcdcd;
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .additional__description {
@@ -35,4 +39,80 @@
 .additional__cost {
   line-height: 14px;
   font-family: $font-text;
+}
+
+@media (min-width: $tablet-width-media) {
+  .additional {
+    width: $tablet-width;
+  }
+
+  .additional__title {
+    margin-bottom: 65px;
+  }
+
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 1px solid $border-color-tablet;
+    border-bottom: none;
+
+    &:last-of-type {
+      border-bottom: 1px solid $border-color-tablet;
+    }
+  }
+
+  .additional__item-title {
+    width: 286px;
+  }
+
+  .additional__text {
+    display: flex;
+    justify-content: flex-end;
+    width: 286px;
+
+    text-align: right;
+  }
+
+  .additional__cost {
+    flex-shrink: 0;
+    width: 95px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .additional {
+    width: $desktop-width;
+  }
+
+  .additional__title {
+    margin-bottom: 75px;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional__list {
+    width: 895px;
+  }
+
+  .additional__item {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+
+    &:last-of-type {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .additional__order-button {
+    width: 245px;
+  }
+
+  .additional__text {
+    justify-content: space-between;
+  }
 }

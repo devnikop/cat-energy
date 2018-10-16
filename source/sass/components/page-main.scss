@@ -1,8 +1,21 @@
-.page-main__title {
-  margin: 0;
-  margin-bottom: 15px;
-
+.page-main__categories,
+.page-main__advantages,
+.page-main__title,
+.page-main__additional {
   @include mobile-paddings;
+}
+
+.page-main__categories {
+  margin-bottom: 30px;
+}
+
+.page-main__advantages {
+  margin-bottom: 42px;
+}
+
+.page-main__title {
+  margin: 0 auto;
+  margin-bottom: 15px;
 
   font-weight: 400;
   font-size: 36px;
@@ -10,13 +23,76 @@
 }
 
 .page-main__catalog {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .page-main__additional {
   margin-bottom: 40px;
 }
 
-.page-main__gift {
+.page-main__form {
   margin-bottom: 35px;
+}
+
+@media (max-width: $tablet-width-media - 1) {
+  .page-main__programm-pick {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width-media) {
+  .page-main__programm-pick,
+  .page-main__categories,
+  .page-main__advantages,
+  .page-main__title,
+  .page-main__catalog,
+  .page-main__additional {
+    @include tablet-paddings;
+  }
+
+  .page-main__title {
+    width: $tablet-width;
+    margin-bottom: 45px;
+  }
+
+  .page-main__catalog {
+    margin-bottom: 65px;
+  }
+
+  .page-main__additional {
+    margin-bottom: 75px;
+  }
+
+  .page-main__form {
+    padding-right: 65px;
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .page-main__programm-pick,
+  .page-main__categories,
+  .page-main__advantages,
+  .page-main__title,
+  .page-main__catalog,
+  .page-main__additional,
+  .page-main__form {
+    @include desktop-paddings;
+  }
+
+  .page-main__programm-pick {
+    margin-bottom: 80px;
+  }
+
+  .page-main__title {
+    width: $desktop-width;
+  }
+
+  .page-main__catalog {
+    margin-bottom: 75px;
+  }
+
+  .page-main__additional {
+    margin-bottom: 85px;
+  }
 }

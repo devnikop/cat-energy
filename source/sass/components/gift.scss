@@ -1,7 +1,6 @@
 .gift {
-  min-width: 280px;
-  min-height: 289px;
-  margin: 0 20px;
+  width: 280px;
+  height: 289px;
 
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -12,4 +11,10 @@
   line-height: 20px;
   font-family: $font-text;
   color: #ffffff;
+}
+
+@media (min-width: $desktop-width-media) {
+  .gift {
+    width: 245px;
+  }
 }

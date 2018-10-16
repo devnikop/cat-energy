@@ -1,3 +1,13 @@
 .main-nav__toggle {
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width-media) {
+  .main-nav {
+    width: 516px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

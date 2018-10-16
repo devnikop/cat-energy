@@ -1,14 +1,15 @@
 .button {
   display: block;
-
-  width: 100%;
+  box-sizing: border-box;
+  // width: 100%;
+  padding: 10px 25px;
 
   font: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #68b738;
   border: none;
@@ -17,5 +18,5 @@
 .button--show-more {
   color: $color-text;
 
-  background-color: $color-gray;
+  background-color: $bg-color-gray;
 }

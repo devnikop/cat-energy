@@ -1,21 +1,47 @@
-.product {
-  @include mobile-paddings;
-
-  border-top: 1px solid #ededed;
-}
-
-.product:last-of-type {
-  border-bottom: 1px solid #ededed;
-}
-
 .product__title {
-  line-height: 20px;
   font-weight: 400;
+  line-height: 20px;
   color: $color-title;
 }
 
 .product__features {
   font-size: 12px;
+  line-height: 16px;
   font-family: $font-text;
   color: $color-text;
+}
+
+.product__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-text;
+  color: $color-text;
+}
+
+@media (max-width: $tablet-width-media - 1) {
+  .product {
+    border-top: 1px solid #ededed;
+
+    @include mobile-paddings;
+
+    &:last-of-type {
+      border-bottom: 1px solid #ededed;
+    }
+  }
+}
+
+@media (min-width: $tablet-width-media) {
+  .product {
+    width: 324px;
+    margin-left: 60px;
+
+    background-image: linear-gradient(#ffffff 15%, #f2f2f2 15%);
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .product {
+    width: 245px;
+    margin-left: 80px;
+  }
 }

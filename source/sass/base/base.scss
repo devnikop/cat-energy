@@ -1,5 +1,5 @@
 body {
-  width: 320px; // temporarily
+  min-width: 320px;
   margin: 0 auto;
 
   font-weight: 400;
@@ -9,6 +9,11 @@ body {
   color: $color-title;
 
   background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -24,11 +29,30 @@ input[type="radio"].visually-hidden {
   height: 1px;
   margin: -1px;
   padding: 0;
-  border: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  border: 0;
+
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path: inset(100%);
+}
+
+@media (min-width: $tablet-width-media) {
+  body {
+    margin-top: 24px;
+  }
+
+  .body__header {
+    margin-bottom: 60px;
+
+    @include tablet-paddings;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .body__header {
+    @include desktop-paddings;
+  }
 }
