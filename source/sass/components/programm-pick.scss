@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  min-height: 460px;
+  min-height: 453px;
   margin: 0 auto;
 
   color: #ffffff;
@@ -32,7 +32,7 @@
   }
 
   &::after {
-    bottom: 40px;
+    bottom: 44px;
     left: 50%;
 
     width: 280px;
@@ -45,7 +45,7 @@
 
 .programm-pick__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 36px;
@@ -59,13 +59,16 @@
 
 @media (max-width: $tablet-width-media - 1) {
   .programm-pick {
-    padding-top: 25px;
+    padding-top: 27px;
 
     text-align: center;
   }
 
   .programm-pick__button {
     margin-top: auto;
+
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -93,8 +96,8 @@
 
   .programm-pick__text {
     width: 427px;
-    margin-bottom: 40px;
-    margin-left: 90px;
+    margin-bottom: 41px;
+    margin-left: 87px;
 
     font-size: 60px;
     line-height: 60px;
@@ -102,8 +105,8 @@
 
   .programm-pick__slogan {
     display: block;
-    margin-bottom: 50px;
-    margin-left: 90px;
+    margin-bottom: 48px;
+    margin-left: 88px;
 
     font-size: 20px;
     line-height: 20px;
@@ -112,6 +115,9 @@
   .programm-pick__button {
     width: 245px;
     margin-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 20px;
 
     font-size: 20px;
   }
@@ -120,11 +126,11 @@
 @media (min-width: $desktop-width-media) {
   .programm-pick {
     width: $desktop-width;
-    min-height: 510px;
-    padding-top: 100px;
+    min-height: 475px;
+    padding-top: 104px;
 
     &::after {
-      top: 20px;
+      top: 24px;
       left: 560px;
 
       width: 552px;
@@ -133,5 +139,18 @@
       background-image: url("../../img/index-can-desktop@1x.png");
       transform: translate(0);
     }
+  }
+
+  .programm-pick__text {
+    margin-left: 80px;
+  }
+
+  .programm-pick__slogan {
+    margin-bottom: 53px;
+    margin-left: 80px;
+  }
+
+  .programm-pick__button {
+    margin-left: 80px;
   }
 }

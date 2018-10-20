@@ -38,8 +38,9 @@
 @media (min-width: $tablet-width-media) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 75px;
+    padding-left: 76px;
 
     font-weight: 400;
     font-size: 18px;
@@ -69,7 +70,7 @@
 
 @media (min-width: $desktop-width-media) {
   .site-list {
-    padding-left: 50px;
+    padding-left: 37px;
 
     font-size: 20px;
   }

@@ -1,7 +1,7 @@
 .logo {
   display: block;
   padding-top: 11px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 
   border-bottom: 1px solid #e6e6e6;
 }
@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width-media) {
   .logo {
-    padding-top: 0;
+    padding-top: 2px;
     padding-bottom: 0;
 
     border-bottom: none;
@@ -41,5 +41,16 @@
   .logo__image {
     width: 173px;
     height: 58px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .logo {
+    padding-top: 0;
+  }
+
+  .logo__image {
+    width: 202px;
+    height: 59px;
   }
 }
