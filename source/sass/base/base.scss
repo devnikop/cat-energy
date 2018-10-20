@@ -53,6 +53,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width-media) {
   .body__header {
+    margin-bottom: 0;
+
     @include desktop-paddings;
   }
 }
