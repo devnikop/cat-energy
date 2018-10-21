@@ -10,7 +10,7 @@
 }
 
 .page-main__advantages {
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .page-main__title {
@@ -50,6 +50,14 @@
     @include tablet-paddings;
   }
 
+  .page-main__categories {
+    margin-bottom: 45px;
+  }
+
+  .page-main__advantages {
+    margin-bottom: 45px;
+  }
+
   .page-main__title {
     width: $tablet-width;
     margin-bottom: 45px;
@@ -82,6 +90,10 @@
 
   .page-main__programm-pick {
     margin-bottom: 80px;
+  }
+
+  .page-main__categories {
+    margin-bottom: 73px;
   }
 
   .page-main__title {
