@@ -13,10 +13,28 @@
 
   background-color: #68b738;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--show-more {
   color: $color-text;
 
   background-color: $bg-color-gray;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

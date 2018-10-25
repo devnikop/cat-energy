@@ -1,13 +1,23 @@
 .comparison-slider {
-  position: relative;
-
   overflow: hidden;
 
   @include mobile-paddings;
 }
 
-.comparison-slider__image--before {
+.comparison-slider__image-wrapper {
   position: relative;
+
+  width: 280px;
+  min-height: 232px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.comparison-slider__image {
+  position: absolute;
+}
+
+.comparison-slider__image--before {
   z-index: 1;
 
   width: 311px;
@@ -15,9 +25,8 @@
 }
 
 .comparison-slider__image--after {
-  position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 
   width: 251px;
   height: 240px;
@@ -75,7 +84,6 @@
     left: -20px;
 
     max-width: 311px;
-    margin-bottom: 36px;
   }
 }
 
@@ -85,26 +93,46 @@
     overflow: initial;
   }
 
+  .comparison-slider__image-wrapper {
+    width: auto;
+    min-height: 499px;
+    margin-bottom: 31px;
+  }
+
+  .comparison-slider__left-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 354px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .comparison-slider__right-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 354px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  .comparison-slider__image {
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
+
   .comparison-slider__image--before {
-    left: 20px;
-
-    width: 677px;
-    height: 499px;
-    margin-bottom: 28px;
-    // clip: rect(0 0 0 0);
-
-    clip-path: inset(0 50% 0 0);
+    left: 16px;
   }
 
   .comparison-slider__image--after {
-    left: 95px;
-
-    width: 545px;
-    height: 517px;
+    right: 2px;
 
     visibility: visible;
-
-    clip-path: inset(0 0 0 48%);
   }
 
   .comparison-slider__toggles-wrapper {
@@ -116,6 +144,15 @@
     line-height: 20px;
 
     border-bottom: 1px dotted #bebebe;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .comparison-slider__scale {
@@ -167,18 +204,32 @@
 }
 
 @media (min-width: $desktop-width-media) {
+  .comparison-slider__image-wrapper {
+    width: 610px;
+    margin-bottom: 52px;
+  }
+
+  .comparison-slider__left-block {
+    width: 325px;
+    height: 517px;
+  }
+
+  .comparison-slider__right-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 286px;
+    height: 517px;
+    overflow: hidden;
+  }
+
   .comparison-slider__image--before {
-    left: 16px;
-
-    margin-bottom: 49px;
-
-    clip-path: inset(0 47% 0 0);
+    left: -40px;
   }
 
   .comparison-slider__image--after {
-    left: 72px;
-
-    clip-path: inset(0 0 0 52%);
+    right: -40px;
   }
 
   .comparison-slider__toggles-wrapper {
