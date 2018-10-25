@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
+    padding-top: 57px;
+    padding-bottom: 55px;
 
     @include tablet-paddings;
   }
@@ -25,6 +27,7 @@
 
   .footer__wrapper {
     width: $desktop-width;
+    padding-top: 60px;
 
     @include desktop-paddings;
   }

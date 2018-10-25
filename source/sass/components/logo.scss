@@ -21,12 +21,15 @@
 }
 
 .logo--footer {
-  padding-top: 37px;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 31px;
+  border-bottom: none;
 }
 
 .logo__image--footer {
   display: block;
+  width: 128px;
+  height: 24px;
   margin: 0 auto;
 }
 
@@ -38,9 +41,19 @@
     border-bottom: none;
   }
 
+  .logo--footer {
+    padding-top: 4px;
+    padding-left: 1px;
+  }
+
   .logo__image {
     width: 173px;
     height: 58px;
+  }
+
+  .logo__image--footer {
+    width: 128px;
+    height: 24px;
   }
 }
 
@@ -49,8 +62,17 @@
     padding-top: 0;
   }
 
+  .logo--footer {
+    padding-top: 4px;
+  }
+
   .logo__image {
     width: 202px;
     height: 59px;
+  }
+
+  .logo__image--footer {
+    width: 128px;
+    height: 24px;
   }
 }
