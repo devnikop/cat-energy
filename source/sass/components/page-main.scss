@@ -15,7 +15,8 @@
 
 .page-main__title {
   margin: 0 auto;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 28px;
 
   font-weight: 400;
   font-size: 36px;
@@ -60,7 +61,11 @@
 
   .page-main__title {
     width: $tablet-width;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
+    padding-top: 0;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .page-main__catalog {

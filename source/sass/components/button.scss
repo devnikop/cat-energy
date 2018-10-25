@@ -1,7 +1,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  // width: 100%;
+  width: 100%;
   padding: 11px 25px;
 
   font: inherit;
@@ -21,20 +21,5 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.button--show-more {
-  color: $color-text;
-
-  background-color: $bg-color-gray;
-
-  &:hover,
-  &:focus {
-    background-color: #ebebeb;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
   }
 }
