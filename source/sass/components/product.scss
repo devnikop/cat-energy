@@ -87,6 +87,21 @@
   padding-bottom: 10px;
 }
 
+.product__order-button--more {
+  color: $color-text;
+
+  background-color: $bg-color-gray;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (max-width: $tablet-width-media - 1) {
   .product {
     border-top: 1px solid #ededed;
@@ -200,19 +215,6 @@
 
   .product__order-button--more {
     margin-top: auto;
-
-    color: $color-text;
-
-    background-color: $bg-color-gray;
-
-    &:hover,
-    &:focus {
-      background-color: #ebebeb;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
   }
 }
 
