@@ -27,6 +27,10 @@
   line-height: 60px;
 }
 
+.page-main__title--form-page {
+  padding-bottom: 25px;
+}
+
 .page-main__catalog {
   margin-bottom: 28px;
 }
@@ -36,7 +40,7 @@
 }
 
 .page-main__form {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 @media (max-width: $tablet-width-media - 1) {
@@ -55,6 +59,10 @@
     @include tablet-paddings;
   }
 
+  .page-main--form-page {
+    margin-bottom: 40px;
+  }
+
   .page-main__categories {
     margin-bottom: 45px;
   }
@@ -70,6 +78,10 @@
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .page-main__title--form-page {
+    padding-bottom: 0;
   }
 
   .page-main__catalog {
@@ -95,6 +107,10 @@
   .page-main__additional,
   .page-main__form {
     @include desktop-paddings;
+  }
+
+  .page-main--form-page {
+    margin-bottom: 50px;
   }
 
   .page-main__programm-pick {
