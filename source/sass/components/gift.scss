@@ -1,20 +1,80 @@
 .gift {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
   width: 280px;
   height: 289px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    transform: translate(-50%);
+  }
 }
 
 .gift__text {
+  width: 170px;
+  margin: 0;
+  margin-top: 187px;
+
   font-size: 16px;
   line-height: 20px;
   font-family: $font-text;
+  text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width-media) {
+  .gift {
+    width: 708px;
+    height: 200px;
+
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      left: 17%;
+    }
+  }
+
+  .gift__text {
+    margin-top: 72px;
+    margin-left: 307px;
+
+    text-align: left;
+  }
 }
 
 @media (min-width: $desktop-width-media) {
   .gift {
     width: 245px;
+    height: 289px;
+    margin-right: 0;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      left: 51%;
+    }
+  }
+
+  .gift__text {
+    margin-top: 187px;
+    margin-left: 0;
+
+    text-align: center;
   }
 }

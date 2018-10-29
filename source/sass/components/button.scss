@@ -1,8 +1,8 @@
 .button {
   display: block;
   box-sizing: border-box;
-  // width: 100%;
-  padding: 10px 25px;
+  width: 100%;
+  padding: 11px 25px;
 
   font: inherit;
   font-size: 16px;
@@ -13,10 +13,13 @@
 
   background-color: #68b738;
   border: none;
-}
 
-.button--show-more {
-  color: $color-text;
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
 
-  background-color: $bg-color-gray;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

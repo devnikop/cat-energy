@@ -1,12 +1,51 @@
 .programm-pick {
-  min-height: 305px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 453px;
   margin: 0 auto;
 
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
+
+  @include mobile-paddings;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 305px;
+
+    background-color: #63a83a;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+  }
+
+  &::after {
+    bottom: 44px;
+    left: 50%;
+
+    width: 280px;
+    height: 270px;
+
+    background-image: url("../../img/index-can-mobile@1x.png");
+    transform: translate(-50%);
+  }
 }
 
 .programm-pick__text {
   margin: 0;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 36px;
@@ -20,44 +59,98 @@
 
 @media (max-width: $tablet-width-media - 1) {
   .programm-pick {
-    text-align: center;
+    padding-top: 27px;
 
-    background-color: hsl(97, 48%, 44%);
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    text-align: center;
+  }
+
+  .programm-pick__button {
+    margin-top: auto;
+
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: $tablet-width-media) {
   .programm-pick {
     width: $tablet-width;
-    min-height: 820px;
+    min-height: 810px;
 
     color: $color-title;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      right: auto;
+      bottom: 0;
+
+      width: 709px;
+      height: 609px;
+
+      background-image: url("../../img/index-can-tablet@1x.jpg");
+    }
   }
 
   .programm-pick__text {
     width: 427px;
-    margin-bottom: 25px;
-    margin-left: 90px;
+    margin-bottom: 41px;
+    margin-left: 87px;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .programm-pick__slogan {
     display: block;
-    margin-bottom: 45px;
-    margin-left: 90px;
+    margin-bottom: 48px;
+    margin-left: 88px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .programm-pick__button {
     width: 245px;
     margin-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width-media) {
   .programm-pick {
     width: $desktop-width;
-    min-height: 547px;
+    min-height: 475px;
+    padding-top: 104px;
+
+    &::after {
+      top: 24px;
+      left: 490px;
+
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../../img/index-can-desktop@1x.png");
+      transform: translate(0);
+    }
+  }
+
+  .programm-pick__text {
+    margin-left: 80px;
+  }
+
+  .programm-pick__slogan {
+    margin-bottom: 53px;
+    margin-left: 80px;
+  }
+
+  .programm-pick__button {
+    margin-left: 80px;
   }
 }

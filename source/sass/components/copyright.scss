@@ -1,7 +1,56 @@
 .copyright {
-  padding: 25px 0;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .copyright__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $font-text;
   color: $color-text;
+}
+
+.copyright__image {
+  position: absolute;
+  top: 14px;
+  right: -7px;
+
+  width: 40px;
+  height: 51px;
+
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width-media) {
+  .copyright {
+    padding-top: 5px;
+    padding-right: 49px;
+    padding-bottom: 0;
+  }
+
+  .copyright__image {
+    top: -10px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .copyright {
+    padding-top: 8px;
+  }
+
+  .copyright__image {
+    top: -8px;
+  }
 }

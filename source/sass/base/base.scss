@@ -45,7 +45,7 @@ input[type="radio"].visually-hidden {
   }
 
   .body__header {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
 
     @include tablet-paddings;
   }
@@ -53,6 +53,12 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width-media) {
   .body__header {
+    margin-bottom: 0;
+
     @include desktop-paddings;
+  }
+
+  .body__header--inner-page {
+    margin-bottom: 70px;
   }
 }

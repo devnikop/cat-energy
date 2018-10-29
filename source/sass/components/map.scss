@@ -8,17 +8,15 @@
 
 .map__fallback {
   display: block;
-  width: 320px;
+  width: auto;
   height: 362px;
   margin: 0 auto;
 }
 
 .map__pin {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  top: 39%;
+  left: 42%;
 }
 
 .map__iframe {
@@ -36,7 +34,22 @@
     height: 398px;
   }
 
+  .map__pin {
+    top: 36%;
+    left: 40%;
+
+    width: 113px;
+    height: 106px;
+  }
+
   .map__iframe {
     height: 398px;
+  }
+}
+
+@media (min-width: $desktop-width-media) {
+  .map__pin {
+    top: 37%;
+    left: 70%;
   }
 }
