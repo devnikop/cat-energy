@@ -8,7 +8,7 @@
 
 .map__fallback {
   display: block;
-  width: auto;
+  width: 320px;
   height: 362px;
   margin: 0 auto;
 }
@@ -31,12 +31,13 @@
 
 @media (min-width: $tablet-width-media) {
   .map__fallback {
+    width: 768px;
     height: 398px;
   }
 
   .map__pin {
     top: 36%;
-    left: 40%;
+    left: 43%;
 
     width: 113px;
     height: 106px;
@@ -48,6 +49,10 @@
 }
 
 @media (min-width: $desktop-width-media) {
+  .map__fallback {
+    width: 1300px;
+  }
+
   .map__pin {
     top: 37%;
     left: 70%;
