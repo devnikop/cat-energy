@@ -114,32 +114,6 @@
   }
 }
 
-.form__item-wrapper--email {
-  &::after {
-    top: 50%;
-    right: 16px;
-
-    width: 17px;
-    height: 13px;
-
-    background-image: url("../../img/icon-mail.svg");
-    transform: translate(0, -50%);
-  }
-}
-
-.form__item-wrapper--tel {
-  &::after {
-    top: 50%;
-    right: 13px;
-
-    width: 20px;
-    height: 20px;
-
-    background-image: url("../../img/icon-phone.svg");
-    transform: translate(0, -50%);
-  }
-}
-
 .form__label {
   margin-top: 12px;
   margin-right: 15px;
@@ -256,20 +230,35 @@
   color: #444444;
 
   border: 1px solid #e7e7e7;
-
-  &:hover,
-  &:focus {
-    border: 1px solid #cdcdcd;
-  }
-
-  &:active {
-    border: 1px solid #444444;
-    outline: 1px solid #444444;
-  }
+  outline: none;
 
   &:invalid {
-    border: 1px solid #ff8282;
-    outline: 1px solid #ff8282;
+    background-image: linear-gradient(to bottom, #ff8282 2px, transparent 2px),
+      linear-gradient(to right, #ff8282 2px, transparent 2px),
+      linear-gradient(to left, #ff8282 2px, transparent 2px),
+      linear-gradient(to top, #ff8282 2px, transparent 2px);
+  }
+
+  &:invalid + .form__icon {
+    fill: #ff8282;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #cdcdcd 1px, transparent 1px),
+      linear-gradient(to right, #cdcdcd 1px, transparent 1px),
+      linear-gradient(to left, #cdcdcd 1px, transparent 1px),
+      linear-gradient(to top, #cdcdcd 1px, transparent 1px);
+  }
+
+  &:focus {
+    background-image: linear-gradient(to bottom, #444444 2px, transparent 2px),
+      linear-gradient(to right, #444444 2px, transparent 2px),
+      linear-gradient(to left, #444444 2px, transparent 2px),
+      linear-gradient(to top, #444444 2px, transparent 2px);
+  }
+
+  &:focus + .form__icon {
+    fill: #68b738;
   }
 }
 
@@ -283,6 +272,25 @@
 
 .form__input::placeholder {
   text-transform: uppercase;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+
+  transform: translate(0, -50%);
+
+  &:hover {
+    fill: #ff8282;
+  }
+}
+
+.form__icon--mail {
+  right: 16px;
+}
+
+.form__icon--tel {
+  right: 13px;
 }
 
 .form__button {
