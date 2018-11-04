@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy: Подбор программы</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="body">
+
+  <div style="display:none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="body__header body__header--inner-page header">
     <a class="header__logo logo" href="index.html">
@@ -80,16 +84,17 @@
             <input class="form__input" id="id-email" type="email" name="email" placeholder="kuklachev@gmail.com"
               required>
             <svg class="form__icon form__icon--mail" width="17" height="13">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
+              <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
             </svg>
           </p>
           <p class="form__item-wrapper form__item-wrapper--contacts">
             <label class="form__label form__label--contacts" for="id-tel">Телефон:*</label>
             <input class="form__input" id="id-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             <svg class="form__icon form__icon--tel" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-tel"></use>
+              <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
             </svg>
           </p>
+        </div>
       </fieldset>
       <fieldset class="form__group form__group--comment">
         <div class="form__title form__title--comment">Комментарий</div>
@@ -97,7 +102,6 @@
           <label class="visually-hidden" for="id-comment">Комментарий</label>
           <textarea class="form__input form__input--comment" id="id-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
-        </div>
       </fieldset>
       <fieldset class="form__group form__group--checkbox">
         <div class="form__title form__title--checkbox">Дополнительно</div>
@@ -149,7 +153,10 @@
         <img class="map__fallback" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
           height="362" alt="Карта с местоположением офиса">
       </picture>
-      <img class="map__pin" src="img/map-pin.png" width="55" height="53" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <picture>
+        <source type="image/webp" srcset="img/map-pin.webp">
+        <img class="map__pin" src="img/map-pin.png" width="55" height="53" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
       <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.32085871619972!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538751231084"
         width="320" height="362" allowfullscreen>
       </iframe>
@@ -164,7 +171,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в вконтакте</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--vkontakte" width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                <use xlink:href="img/sprite.svg#sprite-icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -172,7 +179,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в инстаграме</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--instagram" width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -180,7 +187,7 @@
             <a class="social__link" href="#">
               <span class="visually-hidden">Мы в фейсбуке</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--facebook" width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -190,7 +197,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
           <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-academy"></use>
+            <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
           </svg>
         </a>
       </div>
