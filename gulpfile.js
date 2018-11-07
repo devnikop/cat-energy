@@ -103,7 +103,7 @@ gulp.task("server", function() {
 
   gulp.watch(
     "source/sass/**/*.{scss,sass}",
-     gulp.series("css")
+    gulp.series("css")
   );
 
   gulp.watch(
@@ -113,7 +113,7 @@ gulp.task("server", function() {
 
   gulp.watch(
     "source/*.html",
-     gulp.series("html", "refresh")
+    gulp.series("html", "refresh")
   );
 });
 
