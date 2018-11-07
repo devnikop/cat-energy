@@ -21,6 +21,7 @@
   line-height: 16px;
   font-family: $font-text;
   text-align: center;
+  color: $color-text;
   text-transform: none;
 }
 
@@ -259,6 +260,13 @@
 
   &:focus + .form__icon {
     fill: #68b738;
+  }
+}
+
+.form__input--radio,
+.form__input--checkbox {
+  &:disabled + .form__label {
+    opacity: 0.4;
   }
 }
 

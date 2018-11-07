@@ -10,8 +10,9 @@
 }
 
 .example__wrapper {
-  @include mobile-paddings;
   margin-bottom: 35px;
+
+  @include mobile-paddings;
 }
 
 .example__title {
@@ -29,6 +30,7 @@
   padding-right: 5px;
 
   font-family: $font-text;
+  color: $color-text;
 }
 
 .example__list {
@@ -71,7 +73,9 @@
 
   font-size: 12px;
   line-height: 12px;
+  font-family: $font-text;
   text-align: center;
+  color: $color-text;
 
   background-color: $bg-color-gray;
   transform: translate(-50%);
@@ -100,8 +104,8 @@
   }
 
   .example__wrapper {
-    padding: 0;
     margin-bottom: 85px;
+    padding: 0;
   }
 
   .example__title {
@@ -144,7 +148,7 @@
   .example__field {
     top: 86%;
 
-    padding: 0 8px;
+    padding: 0 5px;
 
     font-size: 14px;
     line-height: 14px;

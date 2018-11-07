@@ -216,11 +216,12 @@
 
   .product__order-button {
     width: auto;
-    margin-left: 38px;
     margin-right: 38px;
+    margin-left: 38px;
   }
 
   .product__order-button--more {
+    width: 249px;
     margin-top: auto;
   }
 }
@@ -238,5 +239,9 @@
 
   .product__features {
     width: 167px;
+  }
+
+  .product__order-button--more {
+    width: 169px;
   }
 }

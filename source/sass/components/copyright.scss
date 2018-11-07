@@ -24,7 +24,8 @@
 
   fill: #666666;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #68b738;
   }
 
