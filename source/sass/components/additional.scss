@@ -124,7 +124,7 @@
     padding-top: 25px;
     padding-right: 37px;
     padding-bottom: 28px;
-    padding-left: 36px;
+    padding-left: 38px;
 
     border: 1px solid $border-color-tablet;
     border-bottom: none;
@@ -146,12 +146,16 @@
     justify-content: flex-end;
     width: 286px;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 4px;
 
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     color: $color-text;
+  }
+
+  .additional__description {
+    margin-right: 14px;
   }
 
   .additional__cost {
@@ -222,6 +226,8 @@
   .additional__text {
     justify-content: space-between;
     width: 290px;
+    padding-top: 9px;
+    padding-left: 5px;
   }
 
   .additional__cost {

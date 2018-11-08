@@ -143,10 +143,9 @@
   .product__title-link {
     width: 138px;
     margin-top: 0;
+    margin-right: auto;
     margin-bottom: 18px;
-    margin-left: 50%;
-
-    transform: translate(-50%);
+    margin-left: auto;
   }
 
   .product__title {
@@ -197,12 +196,13 @@
     bottom: 0;
 
     width: auto;
+  }
+
+  .product__image--small {
     height: 172px;
   }
 
-  .product__image--2,
-  .product__image--4,
-  .product__image--6 {
+  .product__image--big {
     height: 208px;
   }
 
